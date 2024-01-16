@@ -17,6 +17,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -25px; /* Pull the next element (reset image) closer */
 }
 
 #randomImage {
@@ -28,7 +29,7 @@ html, body {
 #resetImages {
     position: absolute; /* Positioned relative to #imageContainer */
     left: 50%;
-    bottom: -10px;
+    bottom: 0px;
     transform: translateX(-50%);
     width: 150px; /* Adjust as needed */
     cursor: pointer;
