@@ -18,7 +18,7 @@ let images = [...originalImages];
 
 function changeImage() {
     if (images.length === 0) {
-        alert("All images have been shown!");
+        alert("카드가 다 끝났습니다. HOME 버튼을 눌러 재시작 해주세요!");
         return;
     }
 
