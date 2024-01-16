@@ -5,18 +5,18 @@ html, body {
     width: 100%;
     overflow: hidden; /* Prevents scrolling */
     position: relative; /* Needed for absolute positioning of the reset button */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically and horizontally */
 }
 
 #imageContainer {
-    position: fixed; /* Fixed positioning relative to the viewport */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    position: relative; /* Relative positioning */
+    width: 90vw;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Hide any overflow */
 }
 
 #randomImage {
@@ -28,7 +28,7 @@ html, body {
 #resetImages {
     position: absolute; /* Positioned relative to #imageContainer */
     left: 50%;
-    bottom: -60px;
+    bottom: -10px;
     transform: translateX(-50%);
     width: 150px; /* Adjust as needed */
     cursor: pointer;
