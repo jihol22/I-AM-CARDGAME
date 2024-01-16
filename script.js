@@ -1,4 +1,4 @@
-document.getElementById('changeImage').addEventListener('click', function() {
+document.getElementById('randomImage').addEventListener('click', function() {
     changeImage();
 });
 
@@ -7,9 +7,10 @@ document.getElementById('resetImages').addEventListener('click', function() {
 });
 
 let originalImages = [
-    'images/one.jpg',
-    'images/two.jpg',
-    'images/three.jpg',
+    'images/1.png',
+    'images/2.png',
+    'images/3.png',
+    
     // Add more image paths here
 ];
 
@@ -31,5 +32,5 @@ function changeImage() {
 
 function resetImages() {
     images = [...originalImages];
-    document.getElementById('randomImage').src = images[0];
+    document.getElementById('randomImage').src = 'images/homepage.png'; // Set this to your initial/main image
 }
