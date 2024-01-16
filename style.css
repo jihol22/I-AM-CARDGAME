@@ -3,7 +3,6 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden; /* Prevents scrolling */
     display: flex;
     justify-content: center;
     align-items: center; /* Center content vertically and horizontally */
@@ -13,7 +12,6 @@ html, body {
 #imageContainer {
     position: relative; /* Relative positioning */
     width: 90vw;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,5 +27,5 @@ html, body {
 #resetImages {
     width: 150px; /* Adjust as needed */
     cursor: pointer;
-    margin-top: 10px
+    margin-top: 0px
 }
