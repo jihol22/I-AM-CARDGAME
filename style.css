@@ -4,10 +4,10 @@ html, body {
     height: 100%;
     width: 100%;
     overflow: hidden; /* Prevents scrolling */
-    position: relative; /* Needed for absolute positioning of the reset button */
     display: flex;
     justify-content: center;
     align-items: center; /* Center content vertically and horizontally */
+    flex-direction: column; /* Stack elements vertically */
 }
 
 #imageContainer {
@@ -17,7 +17,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -25px; /* Pull the next element (reset image) closer */
+    position: relative;
 }
 
 #randomImage {
@@ -27,10 +27,7 @@ html, body {
 }
 
 #resetImages {
-    position: absolute; /* Positioned relative to #imageContainer */
-    left: 50%;
-    bottom: 0px;
-    transform: translateX(-50%);
     width: 150px; /* Adjust as needed */
     cursor: pointer;
+    margin-top: 10px
 }
